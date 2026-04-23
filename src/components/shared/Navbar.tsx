@@ -12,7 +12,7 @@ export default function Navbar() {
 
           <div>
             <h1 className="text-lg font-black tracking-tight text-slate-900 sm:text-xl">
-              Portal
+              Samira Cloud 
             </h1>
             <p className="text-xs font-medium text-slate-500">
               QR Attendance System
