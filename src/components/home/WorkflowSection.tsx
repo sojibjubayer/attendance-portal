@@ -23,7 +23,7 @@ export default function WorkflowSection() {
               key={item.step}
               className="rounded-[1.75rem] border border-white/70 bg-white/90 p-6 shadow-sm"
             >
-              <div className="inline-flex rounded-2xl bg-gradient-to-r from-sky-600 to-pink-500 px-4 py-2 text-sm font-bold text-white">
+              <div className="inline-flex rounded-2xl bg-linear-to-r from-sky-600 to-pink-500 px-4 py-2 text-sm font-bold text-white">
                 {item.step}
               </div>
 

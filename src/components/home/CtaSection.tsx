@@ -5,7 +5,7 @@ export default function CtaSection() {
   return (
     <section className="pb-16 sm:pb-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="overflow-hidden rounded-[2rem] bg-gradient-to-r from-sky-700 via-blue-700 to-pink-600 p-8 text-white shadow-2xl sm:p-10 lg:p-12">
+        <div className="overflow-hidden rounded-4xl bg-linear-to-r from-sky-700 via-blue-700 to-pink-600 p-8 text-white shadow-2xl sm:p-10 lg:p-12">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-white/80">
               Ready to Launch

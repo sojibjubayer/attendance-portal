@@ -17,8 +17,8 @@ export default function SamplePreviewSection() {
             </p>
           </div>
 
-          <div className="rounded-[2rem] border border-white/70 bg-white/90 p-5 shadow-2xl shadow-slate-200/50 backdrop-blur-xl sm:p-7">
-            <div className="flex items-start justify-between gap-4 rounded-2xl bg-gradient-to-r from-sky-50 via-white to-rose-50 p-4 sm:p-5">
+          <div className="rounded-4xl border border-white/70 bg-white/90 p-5 shadow-2xl shadow-slate-200/50 backdrop-blur-xl sm:p-7">
+            <div className="flex items-start justify-between gap-4 rounded-2xl bg-linear-to-r from-sky-50 via-white to-rose-50 p-4 sm:p-5">
               <div>
                 <p className="text-xs font-medium text-slate-500">Today</p>
                 <h3 className="mt-1 text-xl font-bold text-slate-900 sm:text-2xl">
@@ -73,7 +73,7 @@ export default function SamplePreviewSection() {
                   </p>
                 </div>
 
-                <div className="rounded-full bg-gradient-to-r from-sky-600 to-pink-500 px-3 py-1 text-xs font-semibold text-white">
+                <div className="rounded-full bg-linear-to-r from-sky-600 to-pink-500 px-3 py-1 text-xs font-semibold text-white">
                   QR Verified
                 </div>
               </div>

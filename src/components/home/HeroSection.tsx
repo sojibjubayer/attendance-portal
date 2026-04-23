@@ -10,7 +10,7 @@ export default function HeroSection() {
 
       <h1 className="mt-5 text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
         Smart QR Attendance
-        <span className="mt-2 block bg-gradient-to-r from-sky-700 via-blue-700 to-pink-600 bg-clip-text text-transparent">
+        <span className="mt-2 block bg-linear-to-r from-sky-700 via-blue-700 to-pink-600 bg-clip-text text-transparent">
           for modern companies
         </span>
       </h1>
@@ -39,7 +39,7 @@ export default function HeroSection() {
       <div className="mt-8 flex flex-col gap-3 sm:flex-row">
         <Link
           href="/login"
-          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-sky-600 via-blue-700 to-pink-600 px-6 py-3.5 text-sm font-semibold text-white shadow-xl shadow-sky-200/50 transition hover:-translate-y-0.5"
+          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-sky-600 via-blue-700 to-pink-600 px-6 py-3.5 text-sm font-semibold text-white shadow-xl shadow-sky-200/50 transition hover:-translate-y-0.5"
         >
           Access Company Portal
           <ArrowRight className="h-4 w-4" />

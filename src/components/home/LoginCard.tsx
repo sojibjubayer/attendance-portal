@@ -8,7 +8,7 @@ export default function LoginCard() {
       <div className="absolute -left-8 top-10 h-32 w-32 rounded-full bg-sky-200/50 blur-3xl" />
       <div className="absolute -right-6 bottom-10 h-32 w-32 rounded-full bg-pink-200/50 blur-3xl" />
 
-      <div className="relative rounded-[2rem] border border-white/70 bg-white/90 p-6 shadow-2xl shadow-slate-200/60 backdrop-blur-xl sm:p-8">
+      <div className="relative rounded-4xl border border-white/70 bg-white/90 p-6 shadow-2xl shadow-slate-200/60 backdrop-blur-xl sm:p-8">
         <div className="mb-6">
           <p className="text-sm font-semibold text-sky-700">Portal Login</p>
           <h2 className="mt-1 text-2xl font-bold text-slate-900">
@@ -64,7 +64,7 @@ export default function LoginCard() {
 
           <button
             type="submit"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-sky-600 via-blue-700 to-pink-600 px-5 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-sky-600 via-blue-700 to-pink-600 px-5 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
           >
             Login to Dashboard
             <ArrowRight className="h-4 w-4" />

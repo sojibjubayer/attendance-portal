@@ -31,7 +31,7 @@ export default function ServicesSection() {
                 key={item.title}
                 className="rounded-[1.75rem] border border-slate-100 bg-white/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-100 via-white to-pink-100">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-linear-to-br from-sky-100 via-white to-pink-100">
                   <Icon className="h-5 w-5 text-sky-700" />
                 </div>
 
