@@ -28,10 +28,10 @@ export default function CtaSection() {
               </Link>
 
               <a
-                href="#services"
+                href="features"
                 className="inline-flex items-center justify-center rounded-2xl border border-white/30 bg-white/10 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"
               >
-                View Features
+                View All Features
               </a>
             </div>
           </div>
