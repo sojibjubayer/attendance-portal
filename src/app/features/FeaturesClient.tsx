@@ -22,24 +22,96 @@ import {
 import { motion } from "framer-motion";
 
 const features = [
-  ["Super Admin Panel", "Manage all companies, admins, users, settings, and platform controls.", LockKeyhole],
-  ["Company Registration System", "Register companies with profile, company admin, branding, and portal access.", Building2],
-  ["Unique Company ID", "Give every company a unique ID for separated login and attendance data.", Fingerprint],
-  ["Company-wise Login System", "Admins and staff log in using company ID, email, and password.", ShieldCheck],
-  ["Separate Company Dashboard", "Each company gets its own dashboard, staff list, attendance records, and reports.", LayoutDashboard],
-  ["Company Branding", "Add company logo, name, and brand colors for a branded portal experience.", Palette],
-  ["Staff Management", "Create, update, activate, deactivate, and manage staff with role permissions.", Users],
-  ["Attendance Marking Page", "Dedicated page for staff to mark attendance securely after validation.", QrCode],
-  ["Check-in / Lunch / Checkout", "Track check-in, lunch out, lunch in, and checkout with timestamps.", Clock3],
-  ["Date & Time Tracking", "Every attendance action is saved with accurate date and time records.", CalendarDays],
-  ["Attendance History", "View previous attendance records with clean daily and monthly history.", CheckCircle2],
-  ["Monthly Attendance Reports", "Generate organized reports for admin review, HR, and payroll preparation.", LayoutDashboard],
-  ["Admin Access Control", "Control what admins can view, edit, approve, and manage.", BadgeCheck],
-  ["Session Management", "Keep login sessions secure with protected dashboard access.", LockKeyhole],
-  ["Mobile-friendly UI", "Responsive experience for mobile, tablet, laptop, and desktop.", Smartphone],
-  ["Role-based Access", "Separate access levels for Super Admin, Company Admin, and Staff.", Users],
-  ["Security Validation", "Protect attendance using QR validation, login checks, and access rules.", ShieldCheck],
-  ["Payroll Support", "Use attendance and working-hour records for payroll calculation support.", WalletCards],
+  [
+    "Super Admin Panel",
+    "Manage all companies, admins, users, settings, and platform controls.",
+    LockKeyhole,
+  ],
+  [
+    "Company Registration System",
+    "Register companies with profile, company admin, branding, and portal access.",
+    Building2,
+  ],
+  [
+    "Unique Company ID",
+    "Give every company a unique ID for separated login and attendance data.",
+    Fingerprint,
+  ],
+  [
+    "Company-wise Login System",
+    "Admins and staff log in using company ID, email, and password.",
+    ShieldCheck,
+  ],
+  [
+    "Separate Company Dashboard",
+    "Each company gets its own dashboard, staff list, attendance records, and reports.",
+    LayoutDashboard,
+  ],
+  [
+    "Company Branding",
+    "Add company logo, name, and brand colors for a branded portal experience.",
+    Palette,
+  ],
+  [
+    "Staff Management",
+    "Create, update, activate, deactivate, and manage staff with role permissions.",
+    Users,
+  ],
+  [
+    "Attendance Marking Page",
+    "Dedicated page for staff to mark attendance securely after validation.",
+    QrCode,
+  ],
+  [
+    "Check-in / Lunch / Checkout",
+    "Track check-in, lunch out, lunch in, and checkout with timestamps.",
+    Clock3,
+  ],
+  [
+    "Date & Time Tracking",
+    "Every attendance action is saved with accurate date and time records.",
+    CalendarDays,
+  ],
+  [
+    "Attendance History",
+    "View previous attendance records with clean daily and monthly history.",
+    CheckCircle2,
+  ],
+  [
+    "Monthly Attendance Reports",
+    "Generate organized reports for admin review, HR, and payroll preparation.",
+    LayoutDashboard,
+  ],
+  [
+    "Admin Access Control",
+    "Control what admins can view, edit, approve, and manage.",
+    BadgeCheck,
+  ],
+  [
+    "Session Management",
+    "Keep login sessions secure with protected dashboard access.",
+    LockKeyhole,
+  ],
+  [
+    "Mobile-friendly UI",
+    "Responsive experience for mobile, tablet, laptop, and desktop.",
+    Smartphone,
+  ],
+  [
+    "Role-based Access",
+    "Separate access levels for Super Admin, Company Admin, and Staff.",
+    Users,
+  ],
+  [
+    "Security Validation",
+    "Protect attendance using QR validation, login checks, and access rules.",
+    ShieldCheck,
+  ],
+  [
+    "Payroll Support",
+    "Use attendance and working-hour records for payroll calculation support.",
+    WalletCards,
+  ],
 ];
 
 const stats = [
@@ -53,7 +125,7 @@ export default function FeaturesClient() {
   return (
     <main className="min-h-screen overflow-hidden bg-slate-50 text-slate-950">
       <section className="relative px-4 py-16 sm:px-6 md:px-10 md:py-24 lg:px-12">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_10%,#2563EB18,transparent_32%),radial-gradient(circle_at_85%_12%,#7C3AED18,transparent_32%),radial-gradient(circle_at_50%_90%,#EC489914,transparent_35%)]" />
+        <div className="absolute inset-0 bg-[radial-linear(circle_at_15%_10%,#2563EB18,transparent_32%),radial-linear(circle_at_85%_12%,#7C3AED18,transparent_32%),radial-linear(circle_at_50%_90%,#EC489914,transparent_35%)]" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.08fr_0.92fr]">
           <motion.div
@@ -68,7 +140,7 @@ export default function FeaturesClient() {
 
             <h1 className="max-w-5xl text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-7xl">
               Premium QR Attendance Platform
-              <span className="block bg-gradient-to-r from-blue-600 via-violet-600 to-pink-500 bg-clip-text text-transparent">
+              <span className="block bg-linear-to-r from-blue-600 via-violet-600 to-pink-500 bg-clip-text text-transparent">
                 for Modern Companies
               </span>
             </h1>
@@ -80,22 +152,25 @@ export default function FeaturesClient() {
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
-              {["Company ID", "QR Secure", "Admin / Staff", "Payroll Ready"].map(
-                (item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-slate-200 bg-white/80 px-4 py-3 text-center text-sm font-bold text-slate-700 shadow-sm"
-                  >
-                    {item}
-                  </div>
-                )
-              )}
+              {[
+                "Company ID",
+                "QR Secure",
+                "Admin / Staff",
+                "Payroll Ready",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl border border-slate-200 bg-white/80 px-4 py-3 text-center text-sm font-bold text-slate-700 shadow-sm"
+                >
+                  {item}
+                </div>
+              ))}
             </div>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="/login"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 via-violet-600 to-pink-500 px-7 py-4 font-black text-white shadow-xl shadow-violet-200 transition duration-500 hover:-translate-y-1"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-blue-600 via-violet-600 to-pink-500 px-7 py-4 font-black text-white shadow-xl shadow-violet-200 transition duration-500 hover:-translate-y-1"
               >
                 Access Portal
                 <ArrowRight size={18} />
@@ -116,10 +191,10 @@ export default function FeaturesClient() {
             transition={{ duration: 0.65, ease: "easeOut", delay: 0.1 }}
             className="relative"
           >
-            <div className="absolute -inset-1 rounded-[2.5rem] bg-gradient-to-r from-blue-300 via-violet-300 to-pink-300 opacity-70 blur-2xl" />
+            <div className="absolute -inset-1 rounded-[2.5rem] bg-linear-to-r from-blue-300 via-violet-300 to-pink-300 opacity-70 blur-2xl" />
 
             <div className="relative rounded-[2.5rem] border border-white bg-white/80 p-4 shadow-2xl shadow-slate-200/80 backdrop-blur-xl">
-              <div className="rounded-[2rem] border border-slate-100 bg-white p-5 sm:p-6">
+              <div className="rounded-4xl border border-slate-100 bg-white p-5 sm:p-6">
                 <div className="mb-6 flex items-center justify-between">
                   <div>
                     <p className="text-sm font-bold text-pink-500">
@@ -130,7 +205,7 @@ export default function FeaturesClient() {
                     </h3>
                   </div>
 
-                  <div className="rounded-2xl bg-gradient-to-br from-blue-50 via-violet-50 to-pink-50 p-3">
+                  <div className="rounded-2xl bg-linear-to-br from-blue-50 via-violet-50 to-pink-50 p-3">
                     <QrCode className="text-violet-600" />
                   </div>
                 </div>
@@ -170,7 +245,7 @@ export default function FeaturesClient() {
                   ))}
                 </div>
 
-                <div className="mt-5 rounded-2xl border border-violet-100 bg-gradient-to-r from-blue-50 via-violet-50 to-pink-50 p-4">
+                <div className="mt-5 rounded-2xl border border-violet-100 bg-linear-to-r from-blue-50 via-violet-50 to-pink-50 p-4">
                   <p className="text-sm font-black text-violet-700">
                     Security Validation Active
                   </p>
@@ -219,9 +294,9 @@ export default function FeaturesClient() {
               }}
               className="group relative overflow-hidden rounded-[1.7rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-500 hover:-translate-y-1 hover:border-violet-200 hover:shadow-xl hover:shadow-violet-100"
             >
-              <div className="absolute -right-14 -top-14 h-32 w-32 rounded-full bg-gradient-to-br from-blue-100 via-violet-100 to-pink-100 blur-2xl transition duration-700 group-hover:scale-125" />
+              <div className="absolute -right-14 -top-14 h-32 w-32 rounded-full bg-linear-to-br from-blue-100 via-violet-100 to-pink-100 blur-2xl transition duration-700 group-hover:scale-125" />
 
-              <div className="relative mb-6 flex h-13 w-13 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-50 via-violet-50 to-pink-50 p-3 ring-1 ring-slate-100">
+              <div className="relative mb-6 flex h-13 w-13 items-center justify-center rounded-2xl bg-linear-to-br from-blue-50 via-violet-50 to-pink-50 p-3 ring-1 ring-slate-100">
                 <Icon className="h-6 w-6 text-violet-600" />
               </div>
 
@@ -233,7 +308,7 @@ export default function FeaturesClient() {
                 {desc}
               </p>
 
-              <div className="relative mt-6 h-1 w-14 rounded-full bg-gradient-to-r from-blue-500 via-violet-500 to-pink-500 transition-all duration-500 group-hover:w-24" />
+              <div className="relative mt-6 h-1 w-14 rounded-full bg-linear-to-r from-blue-500 via-violet-500 to-pink-500 transition-all duration-500 group-hover:w-24" />
             </motion.article>
           ))}
         </div>
@@ -245,10 +320,10 @@ export default function FeaturesClient() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.55, ease: "easeOut" }}
-          className="mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] bg-gradient-to-r from-blue-600 via-violet-600 to-pink-500 p-[1px] shadow-2xl shadow-violet-200"
+          className="mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] bg-linear-to-r from-blue-600 via-violet-600 to-pink-500 p-px shadow-2xl shadow-violet-200"
         >
           <div className="relative rounded-[2.5rem] bg-white p-7 sm:p-10 md:p-14">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#2563EB12,transparent_35%),radial-gradient(circle_at_bottom_right,#EC489914,transparent_35%)]" />
+            <div className="absolute inset-0 bg-[radial-linear(circle_at_top_left,#2563EB12,transparent_35%),radial-linear(circle_at_bottom_right,#EC489914,transparent_35%)]" />
 
             <div className="relative grid items-center gap-8 lg:grid-cols-[1.5fr_0.5fr]">
               <div>
@@ -261,15 +336,15 @@ export default function FeaturesClient() {
                 </h2>
 
                 <p className="mt-5 max-w-2xl text-base leading-8 text-slate-600">
-                  Give every company a branded dashboard, secure login,
-                  QR-based attendance flow, role access, reports, and
-                  payroll-ready attendance data.
+                  Give every company a branded dashboard, secure login, QR-based
+                  attendance flow, role access, reports, and payroll-ready
+                  attendance data.
                 </p>
               </div>
 
               <a
                 href="/contact"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 via-violet-600 to-pink-500 px-8 py-5 font-black text-white shadow-xl shadow-pink-200 transition duration-500 hover:-translate-y-1 sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-blue-600 via-violet-600 to-pink-500 px-8 py-5 font-black text-white shadow-xl shadow-pink-200 transition duration-500 hover:-translate-y-1 sm:w-auto"
               >
                 Request Demo
                 <ArrowRight size={18} />
@@ -282,7 +357,7 @@ export default function FeaturesClient() {
       <footer className="border-t border-slate-200 bg-white px-4 py-8 text-center">
         <p className="text-sm font-bold tracking-wide text-slate-500">
           Powered by{" "}
-          <span className="bg-gradient-to-r from-blue-600 via-violet-600 to-pink-500 bg-clip-text font-black text-transparent">
+          <span className="bg-linear-to-r from-blue-600 via-violet-600 to-pink-500 bg-clip-text font-black text-transparent">
             Samira Cloud Technology
           </span>
         </p>
